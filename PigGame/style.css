@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.html {
+  font-size: 62.5%;
+}
+body {
+  background: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 20rem auto;
+}
+.game-container {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 70rem;
+  border-radius: 11px;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  overflow: hidden;
+
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.name {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.digit-score {
+  font-size: 4.4rem;
+  color: rgb(158, 43, 43);
+  margin-bottom: 8rem;
+}
+.curent-score {
+  font-size: 1.6rem;
+}
+
+.curent-name {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+.current {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.4rem 4.8rem;
+  gap: 1rem;
+  background-color: rgb(158, 43, 43);
+  border-radius: 11px;
+  color: #fff;
+  margin-bottom: 4rem;
+}
+
+.dice-img {
+  height: 6rem;
+  width: 6rem;
+}
+.component {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-game-icon {
+  height: 2rem;
+  width: 2rem;
+}
+.button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  padding: 10px 25px;
+  border-radius: 20px;
+  background-color: #fff;
+  gap: 1rem;
+}
+.btn {
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  background: none;
+  text-transform: uppercase;
+}
+.button-roll-dice {
+  margin-top: 10rem;
+  margin-bottom: 0;
+}
+.hold {
+  margin-top: 1rem;
+}
+.player--active {
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: all 0.3s;
+}
+
+.unvisible {
+  display: none;
+}
+.win {
+  background-color: rgba(0, 0, 0, 0.493);
+}
