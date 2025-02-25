@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Pig-Game</title>
+  </head>
+  <body>
+    <div class="game-container container">
+      <div class="player-1 player player--active">
+        <p class="name name-1 digit-score-1">Player 1</p>
+        <p class="digit-score">0</p>
+        <div class="current">
+          <p class="curent-name">Curent</p>
+          <p class="curent-score current-score-1">0</p>
+        </div>
+      </div>
+      <div class="player-2 player">
+        <p class="name name-2">Player 2</p>
+        <p class="digit-score digit-score-2">0</p>
+        <div class="current">
+          <p class="curent-name">Curent</p>
+          <p class="curent-score current-score-2">0</p>
+        </div>
+      </div>
+
+      <div class="component">
+        <div class="button button-new-game">
+          <ion-icon name="refresh-outline" class="new-game-icon"></ion-icon>
+          <button class="btn-new-game btn">New Game</button>
+        </div>
+        <img src="Dices/dice-1.png" alt="dices" class="dice-img unvisible" />
+
+        <div class="button button-roll-dice">
+          <ion-icon name="dice-outline" class="new-game-icon"></ion-icon>
+          <button class="btn-roll-dice btn">ROLL DICE</button>
+        </div>
+
+        <div class="button hold">
+          <button class="btn btn-hold">HOLD</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
