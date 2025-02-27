@@ -1,0 +1,62 @@
+/* below 800px */
+
+@media (max-width: 50em) {
+  .row,
+  .row-1,
+  .row-2,
+  .row-3,
+  .row-4,
+  .row-5,
+  .radio-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .form {
+    padding: 2rem;
+  }
+
+  .radio-buttons {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .input-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row-4 {
+    width: 100%;
+  }
+
+  .terms-btn {
+    transform: scale(1);
+  }
+  .p-terms {
+    font-size: 1.4rem;
+  }
+}
+
+/* below 512px */
+@media (max-width: 32em) {
+  .form {
+    padding: 1rem;
+  }
+  .btn {
+    width: 90%;
+  }
+  .container {
+    padding: 2rem;
+  }
+  .terms-btn {
+    transform: scale(1);
+  }
+  .p-terms {
+    font-size: 1.4rem;
+  }
+  .row-4 {
+    width: 100%;
+  }
+}
