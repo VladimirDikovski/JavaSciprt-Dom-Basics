@@ -1,16 +1,16 @@
-let radio1 = document.getElementById("radio1");
-let radio2 = document.getElementById("radio2");
-let divElement1 = document.querySelector(".btn-radio-div-1");
-let divElement2 = document.querySelector(".btn-radio-div-2");
-let btnEl = document.querySelector(".btn");
-let messegaEl = document.querySelector(".message");
-let hiddenMessage = document.querySelector(".hidden-messege");
-let firstNameEl = document.querySelector(".input-first-name");
-let lastNameEl = document.querySelector(".input-last-name");
-let emailEl = document.querySelector(".input-email");
-
-let textAreaEl = document.querySelector(".text-area");
-let acceptTermsEl = document.querySelector(".acceptTermsEl");
+const radio1 = document.getElementById("radio1");
+const radio2 = document.getElementById("radio2");
+const divElement1 = document.querySelector(".btn-radio-div-1");
+const divElement2 = document.querySelector(".btn-radio-div-2");
+const btnEl = document.querySelector(".btn");
+const messegaEl = document.querySelector(".message");
+const hiddenMessage = document.querySelector(".hidden-messege");
+const firstNameEl = document.querySelector(".input-first-name");
+const lastNameEl = document.querySelector(".input-last-name");
+const emailEl = document.querySelector(".input-email");
+const textAreaEl = document.querySelector(".text-area");
+const acceptTermsEl = document.querySelector(".acceptTermsEl");
+const acceptTerms = document.getElementById("acceptTerms");
 
 function removeColorRadio(element) {
   element.classList.remove("background-green-radio");
@@ -31,5 +31,16 @@ radio2.addEventListener("change", function () {
 });
 
 btnEl.addEventListener("click", function () {
-  messegaEl.classList.remove("hidden-messege");
+  if (
+    (radio1.checked !== false || radio2.checked !== false) &&
+    firstNameEl.value !== "" &&
+    lastNameEl.value !== "" &&
+    emailEl.value !== "" &&
+    textAreaEl.value !== "" &&
+    acceptTerms.checked !== false
+  ) {
+    messegaEl.classList.remove("hidden-messege");
+  } else {
+    console.log("Please fill the needs fields");
+  }
 });
