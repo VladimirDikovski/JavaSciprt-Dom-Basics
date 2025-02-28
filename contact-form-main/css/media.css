@@ -62,4 +62,7 @@
    .container {
     margin: 5rem auto;
   }
+    .message {
+    top: 540px;
+  }
 }
