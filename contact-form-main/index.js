@@ -40,7 +40,5 @@ btnEl.addEventListener("click", function () {
     acceptTerms.checked !== false
   ) {
     messegaEl.classList.remove("hidden-messege");
-  } else {
-    console.log("Please fill the needs fields");
-  }
+  } 
 });
