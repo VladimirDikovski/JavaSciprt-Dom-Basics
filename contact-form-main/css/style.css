@@ -82,7 +82,8 @@
   width: 100%;
   margin-bottom: 3rem;
   border-radius: 11px;
-  font-size: 1.8rem;
+  font-size: 2.0rem;
+  padding: 1rem;
 }
 .terms {
   display: flex;
