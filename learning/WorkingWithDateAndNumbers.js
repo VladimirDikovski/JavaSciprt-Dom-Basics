@@ -64,6 +64,25 @@ function solve() {
   console.log(1000n + 1000n);
 
   //you can't make operation with regular numbers , you should only use opeartions with big int.
+   //Internationalizing date
+
+  let digit = 23424242.53;
+
+  const locale = navigator.language;
+  //take local code
+
+  const options = {
+    style: "unit",
+    unit: "mile-per-hour",
+    currency:'EUR'
+  };
+
+  console.log(new Intl.NumberFormat("en-EU").format(digit));
+  //23,424,242.53
+  console.log(new Intl.NumberFormat("ge-DE", options).format(digit));
+  console.log(new Intl.NumberFormat(locale.navigator).format(digit)); //take from web browser
+}
+
 }
 
 solve();
