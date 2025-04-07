@@ -41,6 +41,28 @@ function solve() {
   future.setFullYear(2024);
   console.log(future);
   //Tue Nov 19 2024 15:23:00 GMT+0200 (Eastern European Standard Time)
+
+  /Internationalizing date
+
+  const options = {
+    hour: "numeric",
+    miute: "numeric",
+    day: "numeric",
+    month: "numeric", //long ,2digit
+    year: "numeric", //2 digit
+    weekday: "long",
+  };
+
+  const date = new Date();
+  const locale = navigator.language;
+  //take local code
+  console.log(locale);
+  //en-Us
+
+  console.log(new Intl.DateTimeFormat(locale, options).format(date));
+  //check for diffrent format in google ISO language  code table lingoes
+}
+
 }
 
 solve();
