@@ -25,7 +25,7 @@ Person.prototype.lastName = "Dikovski";
 
 console.log(vladi.__proto__.__proto__);
 
-//chalanges
+//challanges
 
 // Coding Challenge #1
 // Your tasks:
