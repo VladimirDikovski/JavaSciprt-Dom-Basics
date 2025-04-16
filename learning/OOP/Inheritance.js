@@ -42,3 +42,24 @@ console.log(vladi);
 // you 'accelerate'! Hint: Review the definiton of polymorphism 😉
 // Test data:
 // § Data car 1: 'Tesla' going at 120 km/h, with a charge of 23%
+const Car = function (make, speed) {
+  this.make = make;
+  this.speed = speed;
+};
+
+Car.prototype.accelerate = function () {
+  this.speed += 10;
+  console.log(`${this.make} is going at this ${this.speed} speed`);
+};
+
+Car.prototype.brake = function () {
+  this.speed -= 5;
+  console.log(`${this.make} is going at this ${this.speed} speed`);
+};
+
+const bmw = new Car("BWM", 120);
+console.log(bmw.make, bmw.speed);
+
+bmw.accelerate();
+bmw.accelerate();
+bmw.brake();
